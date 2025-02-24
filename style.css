@@ -1,0 +1,134 @@
+@font-face {
+        font-family: "Futurabd";
+        src: url("media/futura-now-text-condensed-bd.otf");
+}
+@font-face {
+        font-family: "Futurarg";
+        src: url("media/futura-now-headline-condensed-rg.otf");
+}
+#container {
+        display: flex;
+        justify-content: center;
+
+}
+#center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+header {
+        text-align: center;
+}
+h1 {
+        font-family: sans-serif;
+        font-size: 5em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+}
+h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+}
+article {
+        max-width: 30vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 5px;
+}
+h5 {
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 5px;
+}
+h5:first-of-type {
+        margin-top: 0px;
+}
+p {
+        width: 88%;
+        flex-grow: 1;
+        text-align: justify;
+        margin-bottom: 0px;
+}
+img {
+        width: 12%;
+}
+aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+}
+aside img {
+        width: 50%;
+}
+#side-characters-container {
+        display: flex;
+        flex-direction: row;
+}
+.side-characters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 14%;
+}
+.side-characters img {
+        width: 100px;
+        height: 100px;
+        padding: 0;
+        flex-basis: auto;
+}
+.side-characters p {
+        font-family: "Futurarg";
+        margin-top: 0;
+        text-align: center;
+        line-height: 1;
+}
+.side-characters h6 {
+        font-family: "Futurabd";
+        font-size: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+}
+#zomp {
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+        width: 88px;
+        height: 31px;
+}
+@media only screen and (max-width: 1920px){
+        article {
+                max-width: 40vw;
+        }
+}
+@media only screen and (max-width: 1500px){
+        article {
+                max-width: 70vw;
+        }
+}
+@media only screen and (max-width: 850px){
+        article {
+                max-width: 90vw;
+        }
+        aside {
+                display: none;
+        }
+        #side-characters-container {
+                max-width: 90vw;
+                overflow-x: scroll;
+                overflow-y: clip;
+        }
+        .side-characters {
+                width: 28%;
+        }
+}

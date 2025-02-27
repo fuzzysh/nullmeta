@@ -99,12 +99,17 @@ aside img {
         margin-bottom: 0;
         text-align: center;
 }
-#zomp {
-        position: relative;
-        left: 0px;
-        bottom: 0px;
+.buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-top: 15px;
+}
+.buttons>img {
         width: 88px;
         height: 31px;
+        background-color: rgba(0, 0, 0, 0.0);
 }
 @media only screen and (max-width: 1920px){
         article {

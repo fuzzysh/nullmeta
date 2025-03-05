@@ -101,6 +101,13 @@ aside img {
         margin-bottom: 0;
         text-align: center;
 }
+.counter {
+        display: flex;
+        justify-content: center;
+}
+.counter img {
+        width: 30px;
+}
 .buttons {
         display: flex;
         flex-wrap: wrap;
